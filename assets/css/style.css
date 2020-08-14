@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather');
+
+/* General styles */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: "Merriweather", sans-serif;
+}
+
+/* Header */
+.container-header {
+    margin: 2.1rem;
+}   
+
+.container-header a {
+    color: #2C41A3;
+    text-decoration: none;
+}
+
+.container-header h2 {
+    font-size: 3rem;
+}
+
+/* Navbar */
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar {
+background-color:#49ADD6;
+ }
+
+.nav-item a {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #FFFFFF; 
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+} 
+
+.nav-item a:hover {
+  color: #273EA3;
+  text-decoration: none;
+}
+
+
+ /* Jumbotron */
+ .jumbotron {
+    background-image: url(../images/poprad_original1.jpg);
+    background-repeat: no-repeat;   
+    background-size: cover;
+    height: 75vh;    
+ }
+
+ .container-jumbotron {
+    color: #FFFFFF;  
+    margin-top: 6rem;    
+ }
+
+h2.display-4 {
+    font-size: 3rem;
+    font-weight: 200
+}
+
+p.lead {
+    margin-top: 1.25rem;
+}
