@@ -9,6 +9,11 @@
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/38036ebe9c.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">(function(){
+        emailjs.init("user_4g5Gim9SDEp1W02ZO7anK"); 
+       	})();
+    </script>
 </head>
 
 <body>
@@ -93,8 +98,8 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="newsletter-wrapper">
-                        <h4 class="newsletter-heading">Do you have suggestions for this site? <br>Get in touch.</h4>
-                        <form action="/" class="form-inline">
+                        <h4 class="newsletter-heading">Sign up for a newsletter</h4>
+                        <form action="/" class="form-inline" onsubmit="return sendMail(this);">
                             <label class="sr-only" for="emailadd">Email</label>    
                             <input type="email" name="email" id="emailadd" class="form-control newsfield" 
                                 placeholder="Email" required>
@@ -141,7 +146,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
 	</script>
-    
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
