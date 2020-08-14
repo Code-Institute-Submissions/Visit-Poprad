@@ -48,10 +48,10 @@
 						<a href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a href="#recomendations">Maps</a>
+						<a href="#map">Map</a>
 					</li>
 					<li class="nav-item">
-						<a href="#map-section">Recommendations</a>
+						<a href="#recomendations">Recommendations</a>
 					</li>
 				</ul>
 			</div>
@@ -90,6 +90,18 @@
                     <br>
                 </div>
             </div>    
+        </section>
+        <!-- End of About Section -->
+
+        <!-- Map Section -->
+        <section class="container-fluid"> 
+            <div id="map" class="container-map">
+                <div class="map-heading">
+                    <h3 class="text-center">Map of Poprad</h3>
+                </div>
+                <p class="text-center">Search for places of interest or discover the recomeded ones below</p>       
+                <div id="mymap"></div>
+            </div>
         </section>
         <!-- End of About Section -->
 
@@ -146,6 +158,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
 	</script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANgehoEX7oNnSUt9gW8-lJgu_vABOpfXg&callback=initMap"></script>
+    <script src="assets/js/map.js"></script>
     <script src="assets/js/sendEmail.js"></script>
 </body>
 

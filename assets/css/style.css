@@ -85,6 +85,16 @@ p.lead {
     padding: 2rem 5rem;
  }
 
+/* Map section */
+.map-heading {
+    color:#273EA3;
+}
+
+#mymap {
+    min-height: 500px;
+    margin: 3rem;
+    }
+
 /* Footer */ 
 
 .footer {
