@@ -65,7 +65,7 @@ background-color:#49ADD6;
     color: #FFFFFF;  
     margin-top: 6rem;    
  }
-
+ /* Styled the font as default boothstrap jumbotrone is h1 */
 h2.display-4 {
     font-size: 3rem;
     font-weight: 200
@@ -74,3 +74,15 @@ h2.display-4 {
 p.lead {
     margin-top: 1.25rem;
 }
+
+/* About Poprad */
+
+#about {
+    color:#273EA3;
+}
+
+.cover-about {
+    padding: 2rem 5rem;
+ }
+
+
