@@ -12,31 +12,19 @@ function initMap() {
     let icons = {
         patisserie: {
             name: 'Patisseries',
-            icon: 'assets/images/marker_icons/patisserie.png', // url
-            scaledSize: new google.maps.Size(40, 40), // scaled size
-            origin: new google.maps.Point(0,0), // origin
-            anchor: new google.maps.Point(0, 0) // anchor
+            icon: 'assets/images/marker_icons/patisserie_40x40.png', 
         },
         restaurant: {
             name: 'Restaurants',
-            icon: 'assets/images/marker_icons/restaurant.png', // url
-            scaledSize: new google.maps.Size(40, 40), // scaled size
-            origin: new google.maps.Point(0,0), // origin
-            anchor: new google.maps.Point(0, 0) // anchor    
-        },
+            icon: 'assets/images/marker_icons/restaurant_40x40.png', 
+         },
         bar: {
             name: 'Bars',
-            icon: 'assets/images/marker_icons/bar.png', // url
-            scaledSize: new google.maps.Size(40, 40), // scaled size
-            origin: new google.maps.Point(0,0), // origin
-            anchor: new google.maps.Point(0, 0) // anchor    
-        },
+            icon: 'assets/images/marker_icons/bar_40x40.png', 
+         },
         attraction: {
             name: 'Attractions',
-            icon: 'assets/images/marker_icons/attraction.png', // url
-            scaledSize: new google.maps.Size(40, 40), // scaled size
-            origin: new google.maps.Point(0,0), // origin
-            anchor: new google.maps.Point(0, 0) // anchor    
+            icon: 'assets/images/marker_icons/attraction_40x40.png', 
         }
     };   
 
@@ -47,8 +35,8 @@ function initMap() {
         type: 'patisserie'
         },
         {
-        position:{lat:49.054578, lng:20.299540}, // Cukraren Lucia
-        type: 'bar'
+        position:{lat:49.054578, lng:20.299540}, // Cukráreň Lucia
+        type: 'patisserie'
         }
     ];
 
