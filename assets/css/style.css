@@ -92,10 +92,23 @@ p.lead {
 #mymap {
     min-height: 500px;
     margin: 3rem;
-    }
+}
 
 #pac-input {
     border:2.5px ridge #273EA3; 
+}
+
+#legend {
+    background:#F5FFFA;
+    border: 2px solid  #273EA3;
+ }
+
+#legend h4 {
+    color: #273EA3;
+}
+
+#legend img {
+    width: 2rem;
 }
 
 /* Footer */ 
@@ -146,4 +159,4 @@ input[type="email"].newsfield {
     transform: scale(1.2);
  }
 
- 
+

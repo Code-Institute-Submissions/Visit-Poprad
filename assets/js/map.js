@@ -130,10 +130,23 @@ function initMap() {
         },
     ];
 
-    //Loops through the above array of locations
+        //Loops through the above array of locations
     for (let i = 0; i < locations.length; i++) {
         addMarker(locations[i]);
     }
+
+    //Display legend    
+        let legend = document.getElementById('legend');
+        for (let key in icons) {
+            let type = icons[key];
+            let name = type.name;
+            let icon = type.icon;
+            let div = document.createElement('div');
+            div.innerHTML = '<img src="' + icon + '"> ' + name;
+            legend.appendChild(div);
+        }
+
+        mymap.controls[google.maps.ControlPosition.LEFT_BOTTOM].push('legend');
 
     //Adds the markers on the map
     function addMarker(props) {
@@ -151,6 +164,7 @@ function initMap() {
             infoWindow.open(mymap, marker);
             });
         }
+
     //Search places box - src Google documentations     
         let input = document.getElementById('pac-input');
         let searchBox = new google.maps.places.SearchBox(input);
@@ -193,5 +207,19 @@ function initMap() {
         });
     
         mymap.fitBounds(bounds);
+
+    //Display legend    
+        let legend = document.getElementById('legend');
+        for (let key in icons) {
+            let type = icons[key];
+            let name = type.name;
+            let icon = type.icon;
+            let div = document.createElement('div');
+            div.innerHTML = '<img src="' + icon + '"> ' + name;
+            legend.appendChild(div);
+        }
+
+        mymap.controls[google.maps.ControlPosition.LEFT_BOTTOM].push('legend');
     });
+    
 } 
