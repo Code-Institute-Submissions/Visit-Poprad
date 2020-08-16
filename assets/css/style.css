@@ -159,4 +159,20 @@ input[type="email"].newsfield {
     transform: scale(1.2);
  }
 
+/* Back To Top Button */ 
+ #toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px; 
+    z-index: 99; 
+    color: #f8f8ff;
+    background-color: #273EA3;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+ 
+
 
