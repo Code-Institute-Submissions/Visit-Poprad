@@ -1,163 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Poprad</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/38036ebe9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Visit Poprad</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/38036ebe9c.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    </head>
-
-<body>
-	<header>
-		<div class="container-header">
-			<div class="row text-center">
-				<div class="col-12">
-					<a href="index.html">
-						<h2>Visit Poprad</h2>
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<!-- Navigation Bar -->
-		<nav class="navbar navbar-expand-sm navbar-dark">
-
-			<!-- Toggle icon on phone -->
-			<button class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarToggler"
-                aria-controls="navbarToggler"
-                aria-expanded="false"
-                aria-label="Toggle navigation" >
-                    <span class="navbar-toggler-icon"></span>                  
-            </button>
-
-			<div class="collapse navbar-collapse" id="navbarToggler">
-				<ul class="nav navbar-nav">
-					<li class="nav-item">
-						<a href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a href="#map">Map</a>
-					</li>
-					<li class="nav-item">
-						<a href="#recomendations">Recommendations</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!-- End of Nav Bar -->
-	</header>
-
-	<!-- Jumbotron section from Boostrap -->
-	<section>
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container-jumbotron text-center">
-				<h2 class="display-4">Poprad</h2>
-				<p class="lead">Hidden treasure under High Tatras</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- About Poprad Section -->
-    <section class="container-fluid" >
-        <div class="about-heading" id="about">
-            <h2 class="text-center">About</h2>
+  <body>
+    <header>
+      <div class="container-header">
+        <div class="row text-center">
+          <div class="col-12">
+            <a href="index.html">
+              <h2>Visit Poprad</h2>
+            </a>
+          </div>
         </div>
-        <div class="about-poprad">
-            <div class="cover-about">
-                <p>Gateway to the High Tatras, Poprad is an excellent base 
-                for hiking or skiing day trips. By car or train, there 
-                are plenty of destinations where you can hike around lakes 
-                and through gorges or play in powder at winter-sports resorts. 
-                Rail links to Starý Smokovec and Štrbské Pleso are a cinch, 
-                and Slovenský Raj National Park is only a 15km drive south.</p>
-                <p>Poprad has its own attractions too, with spa-and-swim complex
-                Aqua City and the Spišská Sobota district, where well-preserved 
-                Renaissance buildings radiate charm. Galleries and some outstanding 
-                dining are also options for those all-important rest days 
-                (your calf muscles will thank you).</p>
-            </div>
-        </div>    
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <!-- Toggle icon on phone -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#map">Map</a>
+            </li>
+            <li class="nav-item">
+              <a href="#recomendations">Recommendations</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End of Nav Bar -->
+    </header>
+
+    <!-- Jumbotron section from Boostrap -->
+    <section>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-jumbotron text-center">
+          <h2 class="display-4">Poprad</h2>
+          <p class="lead">Hidden treasure under High Tatras</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Poprad Section -->
+    <section class="container-fluid">
+      <div class="about-heading" id="about">
+        <h2 class="text-center">About</h2>
+      </div>
+      <div class="about-poprad">
+        <div class="cover-about">
+          <p>
+            Gateway to the High Tatras, Poprad is an excellent base for hiking
+            or skiing day trips. By car or train, there are plenty of
+            destinations where you can hike around lakes and through gorges or
+            play in powder at winter-sports resorts. Rail links to Starý
+            Smokovec and Štrbské Pleso are a cinch, and Slovenský Raj National
+            Park is only a 15km drive south.
+          </p>
+          <p>
+            Poprad has its own attractions too, with spa-and-swim complex Aqua
+            City and the Spišská Sobota district, where well-preserved
+            Renaissance buildings radiate charm. Galleries and some outstanding
+            dining are also options for those all-important rest days (your calf
+            muscles will thank you).
+          </p>
+        </div>
+      </div>
     </section>
     <!-- End of About Section -->
 
     <!-- Map Section -->
-    <section class="container-fluid"> 
-            <div id="map" class="container-map">
-                <div class="map-heading">
-                    <h3 class="text-center">Map of Poprad</h3>
-                </div>
-                <p class="text-center">Search for places of interest or discover the recomeded ones below</p>       
-                <div id="mymap"></div>
+    <section class="container-fluid">
+      <div id="map" class="container-map text-center">
+        <div class="map-heading">
+          <h3 class="text-center">Map of Poprad</h3>
+          <p class="text-center">
+            Search for places of interest or discover the recomeded ones below
+          </p>
+        </div>
+        <div class="row">
+            <!-- Offset classes from Bootstrap documentation -->
+            <div class="col-sm-6 offset-sm-3"> 
+                <input id="pac-input" class="form-control" type="text" placeholder="Search here"/>
             </div>
-        </section>
+        </div>
+        <div id="mymap"></div>
+      </div>
+    </section>
     <!-- End of About Section -->
 
-	<!-- Footer Section --> 
-        <footer class="container-fluid footer">
-            <div class="row">
-                <div class="col-sm-8">
-                    <div class="newsletter-wrapper">
-                        <h4 class="newsletter-heading">Sign up for a newsletter</h4>
-                        <form action="/" class="form-inline" onsubmit="return sendMail(this);">
-                            <label class="sr-only" for="emailadd">Email</label>    
-                            <input type="email" name="email" id="emailadd" class="form-control newsfield" 
-                                placeholder="Email" required>
-                            <button type="submit" class="btn btn-primary my-2 ml-md-2">Send</button>
-                        </form>
-                    </div>         
-                </div>    
-                <div class="col-sm-4"> 
-                    <!-- Social meedia -->
-                    <div class="socialmedia-wrapper">
-                        <h4 class="social-heading">Stay Connected</h4>
-                        <ul class="list-inline social-links">
-                            <li class="list-inline-item">
-                                <a href="https://facebook.com/poprad.eu/" target="_blank">
-                                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                                    <span class="sr-only">Facebook</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://twitter.com" target="_blank">
-                                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                                    <span class="sr-only">Twitter</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.pinterest.ie" target="_blank">
-                                    <i class="fab fa-pinterest" aria-hidden="true"></i>
-                                    <span class="sr-only">Pinterest</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>        
-                </div> 
-            </div>
-        </footer>
-        <!-- End of Footer Section -->
+    <!-- Footer Section -->
+    <footer class="container-fluid footer">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="newsletter-wrapper">
+            <h4 class="newsletter-heading">Sign up for a newsletter</h4>
+            <form
+              action="/"
+              class="form-inline"
+              onsubmit="return sendMail(this);"
+            >
+              <label class="sr-only" for="emailadd">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="emailadd"
+                class="form-control newsfield"
+                placeholder="Email"
+                required
+              />
+              <button type="submit" class="btn btn-primary my-2 ml-md-2">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <!-- Social meedia -->
+          <div class="socialmedia-wrapper">
+            <h4 class="social-heading">Stay Connected</h4>
+            <ul class="list-inline social-links">
+              <li class="list-inline-item">
+                <a href="https://facebook.com/poprad.eu/" target="_blank">
+                  <i class="fab fa-facebook" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com" target="_blank">
+                  <i class="fab fa-twitter" aria-hidden="true"></i>
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.pinterest.ie" target="_blank">
+                  <i class="fab fa-pinterest" aria-hidden="true"></i>
+                  <span class="sr-only">Pinterest</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer Section -->
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Google Maps-->
     <script src="assets/js/map.js"></script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANgehoEX7oNnSUt9gW8-lJgu_vABOpfXg&libraries=places&callback=initMap"></script>
-    
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANgehoEX7oNnSUt9gW8-lJgu_vABOpfXg&libraries=places&callback=initMap"
+    ></script>
+
     <!-- Email -->
     <script src="assets/js/sendEmail.js"></script>
-    <script type="text/javascript">(function(){
-        emailjs.init("user_4g5Gim9SDEp1W02ZO7anK"); 
-       	})();
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_4g5Gim9SDEp1W02ZO7anK");
+      })();
     </script>
-</body>
-
+  </body>
 </html>

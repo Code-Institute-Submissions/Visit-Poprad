@@ -151,7 +151,47 @@ function initMap() {
             infoWindow.open(mymap, marker);
             });
         }
-    };
+    //Search places box - src Google documentations     
+        let input = document.getElementById('pac-input');
+        let searchBox = new google.maps.places.SearchBox(input);
 
+        mymap.addListener('bounds_changed', function() {
+            searchBox.setBounds(mymap.getBounds());
+        });
 
+        let markers = [];
+  
+        searchBox.addListener('places_changed', function () {
+        let places = searchBox.getPlaces();
 
+        if (places.length == 0) {
+            return;
+        }    
+        markers.forEach(function (marker) { 
+            marker.setMap(null); 
+        });
+
+        markers = [];
+
+        let bounds = new google.maps.LatLngBounds();
+
+        places.forEach(function(place) {
+            if (!place.geometry) {
+            return;
+            }    
+            markers.push(new google.maps.Marker({
+                map: mymap,
+                title: place.name,
+                position: place.geometry.location
+                })
+            );
+            if (place.geometry.viewport) {
+            bounds.union(place.geometry.viewport);
+            } else{
+            bounds.extend(place.geometry.location);
+            }
+        });
+    
+        mymap.fitBounds(bounds);
+    });
+} 

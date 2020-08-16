@@ -94,6 +94,10 @@ p.lead {
     margin: 3rem;
     }
 
+#pac-input {
+    border:2.5px ridge #273EA3; 
+}
+
 /* Footer */ 
 
 .footer {
