@@ -101,14 +101,15 @@ p.lead {
 #legend {
     background:#F5FFFA;
     border: 2px solid  #273EA3;
+    color: #273EA3;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: left;
+    margin: 15px;
  }
 
-#legend h4 {
+ #legend h3 {
     color: #273EA3;
-}
-
-#legend img {
-    width: 2rem;
 }
 
 /* Footer */ 
@@ -173,6 +174,7 @@ input[type="email"].newsfield {
     font-size: 25px;
     padding: 5px 10px;
 }
- 
+
+
 
 

@@ -135,8 +135,9 @@ function initMap() {
         addMarker(locations[i]);
     }
 
-    //Display legend    
+    //Display legend - src Google documentation - display issue fixed with CI tutor support    
         let legend = document.getElementById('legend');
+        console.log(legend)
         for (let key in icons) {
             let type = icons[key];
             let name = type.name;
@@ -144,9 +145,11 @@ function initMap() {
             let div = document.createElement('div');
             div.innerHTML = '<img src="' + icon + '"> ' + name;
             legend.appendChild(div);
+            console.log(legend)
         }
-
-        mymap.controls[google.maps.ControlPosition.LEFT_BOTTOM].push('legend');
+        console.log('hi')
+        mymap.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(legend);
+        console.log(mymap.controls[google.maps.ControlPosition.LEFT_BOTTOM])
 
     //Adds the markers on the map
     function addMarker(props) {
@@ -208,19 +211,7 @@ function initMap() {
     
         mymap.fitBounds(bounds);
 
-    //Display legend    
-        let legend = document.getElementById('legend');
-        for (let key in icons) {
-            let type = icons[key];
-            let name = type.name;
-            let icon = type.icon;
-            let div = document.createElement('div');
-            div.innerHTML = '<img src="' + icon + '"> ' + name;
-            legend.appendChild(div);
-        }
-
-        mymap.controls[google.maps.ControlPosition.LEFT_BOTTOM].push('legend');
-    });
+    }); 
     
 } 
 
