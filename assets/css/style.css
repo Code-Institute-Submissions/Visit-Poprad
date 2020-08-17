@@ -151,7 +151,7 @@ input[type="email"].newsfield {
     margin-top: 1rem;
     -webkit-transition: 0.25s; 
     -o-transition: 0.25s;
-    transition: 0.25s;
+    /*transition: 0.25s;*/
  } 
 
  .social-links li a i:hover {
@@ -173,6 +173,10 @@ input[type="email"].newsfield {
     border-radius: 50%;
     font-size: 25px;
     padding: 5px 10px;
+}
+
+.card-text {
+    display: none;
 }
 
 
