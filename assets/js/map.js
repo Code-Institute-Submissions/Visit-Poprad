@@ -1,3 +1,4 @@
+var infoWindow;
 function initMap() {
     let mymap = new google.maps.Map(document.getElementById("mymap"), {
         zoom: 14,
@@ -131,8 +132,8 @@ function initMap() {
     ];
 
         //Loops through the above array of locations
-    for (let i = 0; i < locations.length; i++) {
-        addMarker(locations[i]);
+        for (let i = 0; i < locations.length; i++) {
+            addMarker(locations[i]);
     }
 
     //Display legend - src Google documentation - display issue fixed with CI tutor support    
@@ -160,13 +161,25 @@ function initMap() {
         });
 
     //Add info window - scr Google documentations & Traversy Media Google Maps API tutorial
-        let infoWindow = new google.maps.InfoWindow({
+        infoWindow = new google.maps.InfoWindow({
             content: props.content,
         });
+
+    /* 
+    Solution for one infowindow closing after another clicked 
+    https://stackoverflow.com/questions/49613610/how-to-google-maps-api-close-infowindow-when-clicking-something-else-marker
+    needed to declare global variable otherwise the mymap listener wouldn't work. 
+    */    
+        if (props.content) {
         marker.addListener("click", function () {
+            infoWindow.setContent(props.content);
             infoWindow.open(mymap, marker);
             });
-        }
+        mymap.addListener('click', function() {
+            if (infoWindow) infoWindow.close();
+            });
+        }    
+    }
 
     //Search places box - src Google documentations     
         let input = document.getElementById('pac-input');
