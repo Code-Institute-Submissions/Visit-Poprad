@@ -133,7 +133,8 @@ p.lead {
 }
 
 .newsletter-wrapper,
-.socialmedia-wrapper {
+.socialmedia-wrapper,
+.contact-wrapper  {
     padding-top: 1rem;
 }
 
@@ -146,7 +147,8 @@ input[type="email"].newsfield {
     width: 18.5rem;
 }
 
-.socialmedia-wrapper {              
+.socialmedia-wrapper,
+.contact-wrapper {              
     text-align: center;
 }
 
