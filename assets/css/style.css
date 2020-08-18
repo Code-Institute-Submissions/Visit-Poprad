@@ -143,12 +143,15 @@ p.lead {
 }
 
 .newsletter-wrapper {
-    padding-left: 3rem;
+    width:100%;
+    display:block;
+    margin:auto;
+    padding-left: 1.8rem;
 }
 
 
 input[type="email"].newsfield {
-    width: 18.5rem;
+    width: 17rem;
 }
 
 .socialmedia-wrapper,
