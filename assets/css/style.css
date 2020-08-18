@@ -15,8 +15,11 @@ html {
 body {
     font-family: "Merriweather", sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
-    color: #273EA3;
+
+.about-heading h2,
+.map-heading h2,
+.activities-heading h2 {
+   color: #2C41A3; 
 }
 
 /* Header */
@@ -44,7 +47,7 @@ background-color:#49ADD6;
 
 .nav-item a {
     font-size: 1.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     color: #FFFFFF; 
     padding: 1rem 2.5rem;
     text-decoration: none;
@@ -71,7 +74,8 @@ background-color:#49ADD6;
  /* Styled the font as default boothstrap jumbotrone is h1 */
 h2.display-4 {
     font-size: 3rem;
-    font-weight: 200
+    font-weight: 200;
+    color: color: #FFFFFF;
 }
 
 p.lead {
@@ -82,7 +86,7 @@ p.lead {
 
 .cover-about {
     padding: 2rem 5rem;
- }
+}
 
 /* Map section */
 
@@ -92,17 +96,17 @@ p.lead {
 }
 
 #pac-input {
-    border:2.5px ridge #273EA3; 
+    border:0.15625rem ridge #273EA3; 
 }
 
 #legend {
     background:#F5FFFA;
-    border: 2px solid  #273EA3;
+    border: 0.125rem solid  #273EA3;
     color: #273EA3;
     font-size: 1rem;
-    padding: 10px;
+    padding: 0.625rem;
     text-align: left;
-    margin: 15px;
+    margin: 0.9375rem;
 }
 
 /* Recommended activities */
@@ -129,7 +133,7 @@ p.lead {
     background-color: #49ADD6;
     color: #273EA3;
     min-height: 8.2rem;
-    padding-top: 15px;
+    padding-top: 0.9375rem;
 }
 
 .newsletter-wrapper,
@@ -164,7 +168,7 @@ input[type="email"].newsfield {
     margin-top: 1rem;
     -webkit-transition: 0.25s; 
     -o-transition: 0.25s;
-    /*transition: 0.25s;*/
+    transition: 0.25s;
  } 
 
  .social-links li a i:hover {
@@ -177,13 +181,17 @@ input[type="email"].newsfield {
  #toTopBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 10px; 
+    bottom: 1.25rem;
+    right: 0.625rem; 
     z-index: 99; 
     color: #f8f8ff;
     background-color: #273EA3;
     border: none;
     border-radius: 50%;
-    font-size: 25px;
-    padding: 5px 10px;
+    font-size: 1.5625rem;
+    padding: 5px 10px; /* leaving as px 5 is too samall */
 }
+
+/* Media queries */
+
+
