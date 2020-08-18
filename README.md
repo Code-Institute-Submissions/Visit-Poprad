@@ -33,13 +33,25 @@
 
 ## UX
 
+
 ### Website Goals
 
-*
+The purpose of the website is to provide tourists basic information about [Poprad](https://en.wikipedia.org/wiki/Poprad) 
+in Slovakia. The main feature of Google search map together recommended places of interest such as restaurants,
+ patisseries, bars and attractions already populated on the map. From the many activities Poprad has to offer 
+ the most popular ones are included on the site with links to corresponding websites for more information. 
+ Another feature offered is sign up for the newsletter so the tourists can be notified about new activities and attractions.
 
 ### User Stories
 
-* 
+* As a user of the site I want a site that is easy to navigate
+* As a tourist I want  a website which shows some recommended 
+activities and places to visit  so I don’t have to do too much 'Googling'
+* As a user I want a site that has functional map with search 
+option so I don’t have to switch between separate windows
+* As a potential tourist or satisfied tourist I would like an option to receive 
+news about uupcoming events and interesting activities 
+
 
 ### Design Choices
 
