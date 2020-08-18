@@ -130,6 +130,16 @@ function initMap() {
         content:"<img src='assets/images/info_windows/jmcoctail_120x100.jpg'><h6>JM Cocktail Bar</h6><p>Námestie svätého Egídia 3633/44, <br>058 01 Poprad</p>",
         type: 'bar'    
         },
+        {
+        position:{lat:49.055600, lng:20.304330}, // SUBWAY BAR
+        content:"<img src='assets/images/info_windows/subway_120x100.jpg'><h6>SUBWAY BAR</h6><p>Námestie svätého Egídia 9/19, <br>058 01 Poprad</p>",
+        type: 'bar'    
+        },
+        {
+        position:{lat:49.057040, lng:20.302315}, // Club 24 s.r.o
+        content:"<img src='assets/images/info_windows/club24_120_100.jpg'><h6>Club 24</h6><p>Štefánikova 4, <br>058 01 Poprad</p>",
+        type: 'bar'    
+        },
     ];
 
         //Loops through the above array of locations
