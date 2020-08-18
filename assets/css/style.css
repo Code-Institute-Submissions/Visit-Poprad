@@ -196,7 +196,7 @@ input[type="email"].newsfield {
 
 /* Media queries */
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 812px) { 
     .cover-about {
         padding: 1rem;
     }
@@ -218,7 +218,24 @@ input[type="email"].newsfield {
         width: 1rem;
         height: 1.2rem;
     }
-    /* .jumbotron needs fixing */
+    
+    .jumbotron {
+       background-image: url(../images/jumbotron_img/poprad_812x542.jpg); 
+       height: 35vh;
+    }
+
+    .container-jumbotron {
+        margin-top: 1rem;
+    }
+
+    .jumbotron h2 {
+        font-size: 2rem;
+    }
+
+    h2.display-4{
+        padding-top: 1rem;
+    }
+        
 }
 
     
