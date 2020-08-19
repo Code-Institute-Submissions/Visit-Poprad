@@ -100,12 +100,21 @@ intended structure on different devices.
   - This project used HTML5 for building the structure of the site
 * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
   - This project used CSS3 for styling of the site
+* [JavaScript](https://www.javascript.com/)
+  - This project used JavaScript to provide the interactivity for the website
+* [jQuery](https://jquery.com/)
+  - This project used jquery for Bootstrap plugins and make feature interactive
 * [Bootstrap](https://getbootstrap.com/) 
   - This project used Bootstrap - CSS framework responsiveness of the site, including JavaScript plugins
 * [Google Fonts](https://fonts.google.com/) 
   - This project used Google Fonts library for customised font
+* [Google Maps API](https://developers.google.com/maps/documentation)
+  - The project used the Google Maps API to provide the interactive Google Maps 
+* [EmailJS](https://www.emailjs.com/)
+  - The project used the EmailJS to enable a functional contact form.
 * [Font Awesome](https://fontawesome.com/) 
-  - This project used Font Awesome icon toolkit for Social Media Logos
+  - This project used Font Awesome icon toolkit for Social Media Logos, Toggle icon
+  and Back to top toggle button 
 * [GitPod](https://code.visualstudio.com/) 
   - This project used GitPod - IDE for local development
 * [GIT](https://git-scm.com/) 
@@ -121,7 +130,7 @@ intended structure on different devices.
     all modern browsers. 
 * [W3C CSS validation](https://jigsaw.w3.org/css-validator/) to validate CSS. 
 * [W3C Markup Validation](https://validator.w3.org/) to validate HTML code.
-* [JSHint](https://jshint.com/) to validate the JavaScript code.
+* [JSHint](https://jshint.com/) to validate the JavaScript code
 
 ------
 

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather');
 
 /* General styles */
@@ -38,7 +45,9 @@ body {
 
 /* Navbar */
 .navbar-collapse {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .navbar {
@@ -249,14 +258,3 @@ input[type="email"].newsfield {
     }
         
 }
-
-
-
-    
-
-
-
-
-
-
-
