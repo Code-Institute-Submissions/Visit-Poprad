@@ -48,6 +48,8 @@ activities and places to visit  so I don’t have to do too much 'Googling'
 option, so I don’t have to switch between separate windows
 * As a potential tourist or satisfied tourist I would like an option to receive 
 news about upcoming events and interesting activities 
+* As a user/protentional tourist I want to see your posts and news 
+on social media so I can see the popular activities are
 
 
 
@@ -92,6 +94,7 @@ visitors/tourists to experience. The Cards are interactive and upon hovering ove
 about each place appears/disappears. This section is also responsive and the cards are displayed appropriately depending on the device.
 * **Subscribe Form** - Allows user to subscribe to a newsletter to receive latest updates
 * **Social Media Links** - Allow users to stay connected on social media 
+* **Back to Top button** - Brings user back to the top of the page
 
 
 ### Future Features
@@ -147,8 +150,53 @@ I would like to link information from Google map API, which I was unable to do i
 ------
 
 ## Testing
+I have relied on Chrome and Opera Developer tools which had proven to be invaluable for testing on responsiveness on different devices and debugging 
+JavaScript (JS) errors. For JS syntax bugs/errors I used [JSHint](https://jshint.com/)
 
+I have validated the HTML and CSS code in [W3C Markup Validation](https://validator.w3.org/) and [W3C CSS validation](testing/w3c-validation.pdf), the results 
+are enclosed [here](https://github.com/JanaBuckova/Visit-Poprad/tree/master/testing "Validation")
+To validate the code I clicked on the provided links then on tab Validate by direct input and I pasted my code there.
+
+## Testing user Stories - implemented features
+
+The testing was completed in Google Chrome, Opera, Firefox, Edge on laptop. I do now own any Apple device and
+therefore was unable to test Safari browser.
+
+**1. Navigation of the site**
+  * From Navigation bar I clicked each navigation link
+  * Links worked and navigated to the appropriate section of the site. 
+  * Back to top Button - when clicked I was taken to the top of the page
+  * The navigation of the site is easy and works as intended 
  
+**2. Custom map markers for recommended places and activities**
+  * The map displayed in every browser uplon loading and the map legend displayed
+  *  When I clicked on each custom marker the Info Window appeard, image loaded and addres appeard
+  * **Observation** - In Opera, upon loading the page for the first time and clicking on each marker for the
+  first time, the image loading was delayed for about half a second. Subsequent clicks worked as intended
+  without delay. 
+  
+**3. Search Places using Map search window**
+ * From navigation bar clicked 'Map' and I was taken to the map section of the page
+ * I entered `hotel` in the search window and I was presented with the `bed` markers that appeared on the map 
+ indicating the locations of hotels in the area
+ * The search works as intended. For the current project without the Info window appearing when markers from search are populated
+ * **Observation** - The map of Poprad is currently zoomed at city centre and when museums or hotels are searched there are
+ markers that appear outside of Poprad-city's direct area but are still in Poprad County
+
+ **4. Subscribe Form**
+ * From footer section I navigated to `Sign up for a newsletter` field
+ * Tried to submit the empty form and verified that an error message about the required fields appeared
+ * Tried to submit the form with an invalid email address and verified that a relevant error message appears. 
+ As mentioned earlier in my MS1 project **Firefox** browser doesn't provide user with the message how correct email address should look 
+ like (contain @), only **Please enter an email address**
+ * After the field was populated, I clicked `Send` and was presented with `Alert` windon confirming I have subscribed. A detailed result
+ of this performed in  Google Chrome can be found [here](https://github.com/JanaBuckova/Visit-Poprad/tree/master/testing_emailJS_testing)
+ * The Subscribe form worked as intended
+
+**5. Social Media**
+ * From footer section clicked on each social media icon and was redirected to the appropriate social media site
+ * As designed each social media site opened in a new tab 
+  
 
 ### Bugs
 
