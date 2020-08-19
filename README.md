@@ -190,18 +190,62 @@ therefore was unable to test Safari browser.
  As mentioned earlier in my MS1 project **Firefox** browser doesn't provide user with the message how correct email address should look 
  like (contain @), only **Please enter an email address**
  * After the field was populated, I clicked `Send` and was presented with `Alert` windon confirming I have subscribed. A detailed result
- of this performed in  Google Chrome can be found [here](https://github.com/JanaBuckova/Visit-Poprad/tree/master/testing_emailJS_testing)
+ of this performed in  Google Chrome can be found [here](https://github.com/JanaBuckova/Visit-Poprad/blob/master/testing)
  * The Subscribe form worked as intended
 
 **5. Social Media**
  * From footer section clicked on each social media icon and was redirected to the appropriate social media site
  * As designed each social media site opened in a new tab 
-  
 
-### Bugs
+ ## Testing other features
+Tested on desktop, tablet, mobile using Developer tools and in real mobile environment using **OnePlus 3**, **Samsung Galaxy A3, **iPhone 7** 
+and tablet **Samsung Galaxy Tab A**
+ 
+**1. Toggler/Hamburger menu**
+ * On mobile device the navigation bar was designed to collapse into a Toggler
+ * Tested and verified that the toggler appeared as intended on smaller and larger mobile screen. 
+
+**2. Smooth Scroll**
+ * Verified that works as intended.
+
+ ## Testing Responsiveness
+
+The responsiveness was tested in real mobile environment using **OnePlus 3**, **Samsung Galaxy A3, **iPhone 7**** and tablet **Samsung Galaxy Tab A**.
+In addition, I used Developer tools for different devices laptops.
+
+1. **On mobile** The overall responsiveness is good. The content fits well on both smaller and larger mobile screens. 
+I have used medial query for max-width 812pp to ensure most of mobile devices were covered by the additional stying for Map legend resize
+and content alignment which is aligned to center. Cards are placed vertically in single column as intended (Bootstrap card grid used).
+Jumbotron image is compressed and resized for mobile devices.
+- After user testing the hamburher toggler was style as user of different ages (my sister and my mum) were not able to clearly see it.
 
 
+2. **On tablets** the responsiveness is good both on horizontal and vertical view. The content is aligned and displays well. There is enough space between cards in vertical view and the content in not 'squished'. In vertical view 
+the cards are presented in 2 column and in horizontal view cards are presented in single column as intended (Bootstrap card grid used)
+The Sign Up form for newsletter in footer - input field and submit button are displayed next to each other in horizontal view and one onder the other in vertical view as intended. I used Bootstrap grid
+to ensure the footer is split into 3 columns.
 
+3. **On Laptop and Desktop**
+* The site renders well with no issues noted.
+
+
+## Bugs during the development
+There were manny small bugs during the development. I have used Google maps and places docuentation code and for the purpose of further
+learniing I have typed in the code insted of copy paste. This led to manny syntax errors and I have often forgot to include , or ;. The sytax errors
+adderes by using Console on [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and validation thoruh [JSHint](https://jshint.com/)
+I didn't use from the beginning.
+ 
+ 1. Custom map markers - I have used custom markers I designed but they were not resizing using 'scaled sizee'when placed on the map
+ - Fix - temporary but not ideal - I have saved them as 40*40 images
+
+ 2. The infowindow not closing - When multiple markers were clicked the Infowindows were not closing once the new
+ marker or map are were clicked even though the code should have worked
+ - Fix - after an extensive 'Googling' I found a solution on Stack overflow (noted in the code) and declared global
+ the infowindow variable
+
+ 3. Map legend not placed on the map - Th map ledend kept droppinng under the map instead of to the maps corner as 
+ intended.
+ - Fix - typing error identified with CI tutor suppot see [here](https://github.com/JanaBuckova/Visit-Poprad/blob/master/testing) 
 
 
 ---
