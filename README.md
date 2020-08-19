@@ -45,7 +45,7 @@ in Slovakia. The main feature of Google search map together recommended places o
 * As a tourist I want  a website which shows some recommended 
 activities and places to visit  so I don’t have to do too much 'Googling'
 * As a user I want a site that has functional map with search 
-option so I don’t have to switch between separate windows
+option, so I don’t have to switch between separate windows
 * As a potential tourist or satisfied tourist I would like an option to receive 
 news about upcoming events and interesting activities 
 
@@ -79,19 +79,32 @@ Wireframes can be found at the below location
 
 ### Existing Features
 
-* 
-* 
-* 
-* 
-*
-* 
+* **Navigation Bar** - Responsive navigation bar that enables the user to navigate through the site. 
+Upon clicking on each of the navigation links, user is taken directly to that section of the site.
+* **About Section** - Provides user with brief commentary about Poprad
+* **Map Section** - Responsive and partially interactive section containing map with search box which 
+enables user to search for places on interest which will be then shown on the map by means of a marker. 
+- Another feature within the map section are map markers which show the user the recommended patisseries 
+  (which in my opinion should be an absolute ‘must try’ on any visitors list), restaurants, bars and attractions. 
+  The markers are organised by colour and stored on a map legend for clarity. Upon clicking each custom marker 
+  on the map an information window appears showing image and address of each place. Already opened windows will 
+  close when another one (or map area) are clicked.
+* **Recommendations Section** - A section containing cards with different types of attractions for 
+visitors/tourists to experience. The Cards are interactive and upon hovering over and out more information 
+about each place appears/disappears. This section is also responsive and the cards are displayed appropriately depending on the device.
+* **Subscribe Form** - Allows user to subscribe to a newsletter to receive latest updates
+* **Social Media Links** - Allow users to stay connected on social media 
+
 
 ### Future Features
+There are few more features withing the map are I would like to implement to provide similar experience to the user as usual Google map does.
 
-* 
-* 
-* 
-* 
+* **Show users location on the map** - So the users can see which amenities and recommended places are within their vicinity.
+* **Interactive map legend** – Users can click on each category and relevant recommended places will appear/disappear.
+* **Information windows for places searched** – After a custom search (e.g. for a hotel) users will be able to click on each 
+marker that appeared on the map and information window will appear.
+* **Link Google ratings and place information to every marker** – After clicking on each type of marker (custom or from Google search) 
+I would like to link information from Google map API, which I was unable to do in this project.
 
 ------
 
