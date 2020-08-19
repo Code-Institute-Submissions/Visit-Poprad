@@ -66,12 +66,10 @@ to leave out the weather widget feature and instead included secction wiht reomm
 
 Wireframes can be found at the below location
 
-* [Desktop](wireframes/MS2_desktop.pdf "Tablet")
-* [Tablet](wireframes/MS2_tablet.pdf "Tablet")
-* [Mobile](wireframes/MS_mobile.png "Mobile")
+* [Desktop](https://github.com/JanaBuckova/Visit-Poprad/blob/master/wireframes/MS2_desktop.png)
+* [Tablet](https://github.com/JanaBuckova/Visit-Poprad/blob/master/wireframes/MS2_tablet.png)
+* [Mobile](https://github.com/JanaBuckova/Visit-Poprad/blob/master/wireframes/MS2_mobile.png)
 
-
-    
 
 ------
 
