@@ -58,6 +58,16 @@ background-color:#49ADD6;
   text-decoration: none;
 }
 
+/* solution for styling toggler https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
+.custom-toggler.navbar-toggler { 
+        border-color: #FFFFFF; 
+    } 
+
+.navbar-toggler-icon i {
+    color:#fff; 
+    font-size:28px;
+}
+
 .jumbotron {
     background-image: url(../images/jumbotron_img/poprad_original1.jpg);
     background-repeat: no-repeat;   
@@ -194,8 +204,10 @@ input[type="email"].newsfield {
     padding: 5px 10px; /* leaving as px 5 is too samall */
 }
 
+
 /* Media queries */
 
+/* Based on the larges mobile */
 @media screen and (max-width: 812px) { 
     .cover-about {
         padding: 1rem;
@@ -237,6 +249,8 @@ input[type="email"].newsfield {
     }
         
 }
+
+
 
     
 
