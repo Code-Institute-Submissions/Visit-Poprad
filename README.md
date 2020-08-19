@@ -2,6 +2,8 @@
 
 **Live demo of this site [**can be found here**](https://janabuckova.github.io/Visit-Poprad/)**.
 
+![](testing/responsive.PNG)
+
 ------
 
 # Table of Contents
@@ -15,10 +17,6 @@
   * [Existing Features](#Existing-Features)
   * [Future Features](#Future-Features)
 * [Technologies Used](#Technologies-Used)
-  * [Languages](#Languages)
-  * [Styling](#Styling)
-  * [Framework](#Framework)
-  * [Testing tools](#Testing-tools)
 * [Testing](#Testing)
   * [Bugs](#Bugs)
 * [Deployment](#Deployment)
@@ -32,7 +30,6 @@
 ------
 
 ## UX
-
 
 ### Website Goals
 
@@ -50,25 +47,29 @@ activities and places to visit  so I don’t have to do too much 'Googling'
 * As a user I want a site that has functional map with search 
 option so I don’t have to switch between separate windows
 * As a potential tourist or satisfied tourist I would like an option to receive 
-news about uupcoming events and interesting activities 
+news about upcoming events and interesting activities 
+
 
 
 ### Design Choices
 
-* 
-
-* 
-
- 
-
-
-* 
-
+* The sites navigation is intended to be simple with the usual navigation bar on the top
+* The colours I initially chose were supposed to represent the tricolour of Slovakian flag but 
+at the end I have decided not to use red colour as the overall overall design would be overpoverd by red.
+I have used two shades of blue and white
+* The font used was Merriweather as it is easy to read  
 
 ### Wireframes
 
-Wireframes for this project were created at the beginning of the project using [Balsamiq](https://balsamiq.com) and provided a useful visual aid for the 
-intended structure on different devices. 
+Wireframes for this project were created at the beginning of the project using [Balsamiq](https://balsamiq.com) I have decided
+to leave out the weather widget feature and instead included secction wiht reommneded atractions and newsletter sign up
+
+Wireframes can be found at the below location
+
+* [Desktop](wireframes/MS2_desktop.pdf "Tablet")
+* [Tablet](wireframes/MS2_tablet.pdf "Tablet")
+* [Mobile](wireframes/MS_mobile.png "Mobile")
+
 
     
 
